@@ -1,0 +1,139 @@
+Form.html:-
+<html>
+<head>
+<script>
+function validateForm()
+{
+var x = document.forms["myForm"]["fname"].value;
+var y = document.forms["myForm"]["fname1"].value;
+var z = document.forms["myForm"]["age"].value;
+var a = document.forms["myForm"]["email"].value;
+var b = document.forms["myForm"]["G1"].value;
+var c = document.forms["myForm"]["pwd"].value;
+if (x == "")
+{
+alert(" First Name must be filled out");
+return false;
+}
+if(y == "")
+{
+alert("Last Name must be filled out");
+return false;
+}
+if(z == "")
+{
+alert("Age must be Digits");
+return false;
+}
+if(b == "")
+{
+alert("Gender must be filled out");
+return false;
+}
+if(a == "")
+{
+alert("E-mail must be filled out");
+return false;
+}
+if(c == "")
+{
+alert("Password must be filled out");
+return false;
+}
+var n = document.forms["myForm"]["numbers"].value;
+if (isNaN(n))
+{
+alert("Please enter Numeric value");return false;
+}
+}
+</script>
+<title>applicationform</title>
+</head>
+<body bgcolor="lightgrey" align="center">
+<h2 align="center">APPLICATION FORM</h2>
+<form name="myForm" action="form.php" onsubmit="return validateForm()"method="post">
+<table border='10' align="center">
+<tr>
+<td>First Name:</td>
+<td><input type="text" name="fname" placeholder="enter first name"></td>
+</tr>
+<tr>
+<td>Last Name:</td>
+<td><input type="text" name="fname1" placeholder="enter last name"></td>
+</tr>
+<tr>
+<td>Age:</td>
+<td><input type="text" name="age" placeholder="enter age"></td>
+</tr>
+<tr>
+<td>Gender </td>
+<td>Male:<input type="radio" name="G1"
+value="Male">&nbsp;&nbsp;&nbsp;Female<input
+type="radio"
+name="G1" value="Female"></td>
+</tr>
+<tr>
+<td>Address:</td>
+<td><textarea name="name" rows="5" cols="30" placeholder="enter address">
+</textarea>
+</td>
+</tr>
+<tr>
+<td>Contact No:</td>
+<td><input type="text" name="countrycode"value="+91" size="3">&nbsp;&nbsp;<input
+type="text" name="numbers" placeholder="enter contact no" max="10" ></td>
+</tr>
+<tr>
+<td>E-mail:</td>
+<td><input type="text" name="email"></td>
+</tr>
+<tr>
+<td>Password:</td>
+<td><input type="password" id="pwd" name="pwd" placeholder="enter password"></td>
+</tr>
+</table>
+<input type="submit" name="submit">
+<input type="reset" name="reset">
+</form></body>
+</html>
+
+
+Form.php:-
+<html>
+<head>
+<style>
+tr{height:50px}
+td{width:100px}
+</style>
+</head>
+<body bgcolor="lightblue">
+<center>
+<?php
+$fname=$_POST["fname"];
+$lname=$_POST["fname1"];
+$age=$_POST["age"];
+$gender=$_POST["G1"];
+$address=$_POST["name"];
+$number=$_POST["numbers"];
+$email=$_POST["email"];
+?>
+<h1><b><u>Registration Form</u></b></h1>
+<table border=1>
+<tr><td>First Name</td>
+<td><?php echo $fname;?></td></tr>
+<tr><td>Last Name</td>
+<td><?php echo $lname;?></td></tr>
+<tr><td>Age</td>
+<td><?php echo $age;?></td></tr>
+<tr><td>Gender</td>
+<td><?php echo $gender;?></td></tr>
+<tr><td>Address</td>
+<td><?php echo $address;?></td></tr>
+<tr><td>Number</td>
+<td><?php echo $number;?></td></tr>
+<tr><td>E-mail</td>
+<td><?php echo $email;?></td></tr>
+</table>
+</center>
+</body>
+</html>
