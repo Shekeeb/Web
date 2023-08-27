@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>
+Hometown
+</title>
+<style>
+p {
+color:264653;
+}
+body {
+background-color: fefae0;
+}
+</style>
+</head>
+<body>
+<h1><u><b><center>MALAPPURAM<center><b><u></h1>
+<ul>
+<li><a href="#a1"><i>Introduction</i></a></li>
+<br>
+<li><a href="#a2"><i>History</i></a></li>
+<br>
+<li><a href="#a3"><i>Geography</i></a></li>
+<br>
+<li><a href="#a4"><i>Education</i></a></li>
+</ul>
+<br>
+<image src="2560px-Malappuram_DownHill_Aerial_View.jpeg">
+<hr>
+<br>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62651.038026862814!2d76.06839175!3d11.0618617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba64a9be29b058f%3A0x23e371e0d4c30d8e!2sMalappuram%2C%20Kerala!5e0!3m2!1sen!2sin!4v1666850861334!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<br>
+<h2 id="a1">Introduction</h2>
+<p>Malappuram (also Malapuram) (Malayalam: [mܣlܣpːurܣm] (listen))[8] is a city in the Indian state of Kerala, spread over an area of 58.20 km2 (22.47 sq mi) including it's outgrowths. The first municipality in the district formed in1970, Malappuram serves as the administrative headquarters of Malappuram district.
+Divided into 40 electoral wards, the city has a population density of 1,742 per square kilometre (4,510 per square mile).
+According to the 2011 census, Malappuram metropolitan area is the fourth largest urban agglomeration in Kerala afterKochi, Calicut, and Thrissur urban areas and the 26th largest in India with a total population of 1.7 million.
+It is the fastest growing city in the world with a 44.1% urban growth between 2015 and 2020 as per the survey conducted by Economist Intelligence Unit (EIU) based on the urban area growth during January 2020.
+Malappuram is situated 54 km southeast of Calicut and 90 km northwest of Palakkad.It is the first Indian municipal body toprovide free Wi-Fi connectivity to its entire residents. 
+Malappuram is also the first Indian municipal body to achieve the International Organization for Standardization certificate.[15] It is also the first complaint-free municipality in the state.</p>
+<h2 id="a2">History</h2>
+<p>Malappuram was a military and administrative headquarters from ancient times, though several of the ancient history of the city is hardly seen recorded. However, there are some pre-historic relics,particularly Rock-cut caves found in some parts of the city like Oorakam, Melmuri, Ponmala, Vengara etc. manifesting theinhabitancy.
+Locality named like Valiyangadi, Kootilangadi, Pallipuram etc. points to the Jain - Buddhist history of Malappuram. Notably, the 1500-year-old Jain Temple above 2000 ft sea level at Oorakam Hill of Malappuram undoubtedly proves the same.
+During the Sangam period, Eranadan Malappuram was under the Chera Empire.Places like Pattar Kadav, Panakkad, etc. are possibly evolved out of Pattars and Panars having lived there. But no furtherdetails are available about the life and culture of the people either during the Sangam age or in the post-Sangamage.
+Eranad was ruled by a Samanthan Nair clan known as Eradis, similar to the Vellodis of neighbouring Valluvanad and Nedungadis of Nedunganad. The rulers of Eranad were known by the title Eralppad/Eradi.Archaeological relics found in Malappuram also include the remnants of palaces of the eastern branch of the Zamorinreign. 
+Malappuram was the military headquarters of the Zamorin in the Eranad region. The Zamorins held swayover Malappuram and their chieftain Para Nambi, ruled the area in early days with headquarters at Downhill(Kottappadi), Malappuram.
+Details of the rulers of erstwhile Malappuram, who were the ancestors of later Zamorins, figure in the Jewish copper plates of Bhaskara Ravi Varman (1000 AD) and in the Kottayam copper plates of VeeraRaghava Chakravarthy (1225AD).
+The later history of the city is interwoven with the history of Zamorin's rule. </p>
+</body>
+</html>
