@@ -1,0 +1,82 @@
+Code 1: Biodata:-
+<html>
+<head>
+<title>BIODATA</title>
+<frameset cols="30%,*">
+<frame name="links" src="links.html">
+<frame name="details" src="details.html">
+</FRAMESET>
+</head>
+</html>
+
+
+Code 2: links:-
+<html>
+<body>
+<img src="C:\Users\my pc\Downloads\IMG-20220516-WA0003 (1).jpg" width="20%"
+align="center">
+<h4>BIODATA</H4>
+<uo>
+<li><a href="details.html" target="details">PERSONAL DETAILS</a></li>
+<li><a href="mark.html" target="details">ACADEMIC PERFOMANCE</a></li>
+</uo>
+</body>
+</html>
+
+
+Code 3: details:-
+<html>
+<body>
+<h2><u>PERSONAL DETAILS</u></H2>
+<pre>
+<i>Name</i> :<b>MOHAMMED SHEKEEB K</B><br>
+<i>Date of Birth</i> :<b>16<sup>th</sup> AUG 2001</B><br>
+<i>Blood Group</i> :<b>B<sup>+ve</sup></B><br>
+<i>Email</i> :<b><a
+href="shekeebmohammed10@gmai.com">shekeebmohammed10@gmail.com</a></B><br>
+<i>Mobile</i> :<b>8714535257</B><br>
+<i>Address</i> :<b>KOTTOLA HOUSE
+VATTALOOR P.O
+MALAPPURAM (Dt)
+Pin: 676507
+</pre>
+</body>
+</html>
+
+
+Code 4: mark;
+<html>
+<head>
+<title>mark</title>
+<style>
+table, th, td {
+border: 2px solid black;
+margin:auto;
+}
+</style>
+</head>
+<body>
+<table class="center">
+<tr>
+<td>Education</td>
+<td>Institution</td>
+<td>Percentage</td>
+</tr>
+<tr>
+<th>10th</th>
+<th>IKTHSS</td>
+<th>90%</th>
+</tr>
+<tr>
+<th>12th</th>
+<th>IKTHSS</td>
+<th>82%</th>
+</tr>
+<tr>
+<th>BCA</th>
+<th>GEMS RAMAPURAM</td>
+<th>75%</th>
+</tr>
+</table>
+</body>
+</html>
