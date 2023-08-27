@@ -1,0 +1,80 @@
+Html file:-
+<html>
+<style>
+td ,tr {
+border: 1px solid red;
+border-style: dashed;
+}</style>
+<head><title>Student</title></head>
+<body bgcolor="lightyellow">
+<h1 align="center"><u>WELCOME</u></h1><br><br>
+<center><h3>Enter the values</h3></center><br><br>
+<form action="sort.php" method="post">
+<table align="center">
+<tr>
+<th>Roll No</th>
+<td><input type="number" name="r1"></td>
+<th>Name</th>
+<td><input type="text" name="n1"></td>
+</tr>
+<tr>
+<th>Roll No</th>
+<td><input type="number" name="r2"></td>
+<th>Name</th>
+<td><input type="text" name="n2"></td>
+</tr>
+<tr><th>
+Roll No</th>
+<td><input type="number" name="r3"></td>
+<th>Name</th>
+<td><input type="text" name="n3"></td>
+</tr>
+<tr>
+<th>Roll No</th>
+<td><input type="number" name="r4"></td>
+<th>Name</th>
+<td><input type="text" name="n4"></td>
+</tr>
+<tr>
+<th>Roll No</th>
+<td><input type="number" name="r5"></td>
+<th>Name</th>
+<td><input type="text" name="n5"></td>
+</tr></table>
+<p align="center"><input type="submit" name="Submit"
+id="submit"></p></form>
+</body>
+</html>
+
+
+Php file:-
+<html>
+<body>
+<style>
+body{
+background-color: #96D4D4;
+}
+</style>
+<?php
+echo"The student names represented in array are<br><br>";
+$rl1=$_REQUEST["r1"];
+$rl2=$_REQUEST["r2"];
+$rl3=$_REQUEST["r3"];
+$rl4=$_REQUEST["r4"];
+$rl5=$_REQUEST["r5"];
+$na1=$_REQUEST["n1"];
+$na2=$_REQUEST["n2"];
+$na3=$_REQUEST["n3"];
+$na4=$_REQUEST["n4"];
+$na5=$_REQUEST["n5"];
+$arr=array("$rl1"=>"$na1","$rl2"=>"$na2","$rl3"=>"$na3","$rl4"=>"$na
+4","$rl5"=>"$na5");
+print_r($arr);
+echo"<br><br> The asorted array is:<br><br>";
+asort($arr);
+print_r($arr);
+echo"<br><br> The arsorted array is:<br><br>";
+arsort($arr);
+print_r($arr);
+?></body>
+</html>
