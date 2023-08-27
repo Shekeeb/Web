@@ -1,0 +1,19 @@
+<html>
+<head>
+<center>
+<h><b><font size="20px" color="greenred">INFINITE BACKGROUNDS</font></b></h><br><br><br>
+<script>
+document.writeln( "Click on button to change the background color");
+const pageBody = document.querySelector("body");
+function bgchange()
+{ let color =
+'#'+(Math.random()*0xFFFFFF<<0).toString(16);
+pageBody.style.background = color;
+}
+</script></center>
+</head>
+<center>
+<button type="button" id="color-button" onclick="bgchange()" >CLICK HERE</button></center>
+<body>
+</body>
+</html>
