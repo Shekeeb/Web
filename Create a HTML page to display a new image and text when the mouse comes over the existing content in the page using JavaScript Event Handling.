@@ -1,0 +1,52 @@
+<html>
+<head>
+<style>
+img
+{
+height:250px;
+width:500px;
+}
+p{
+font-size:30px;
+}
+h1
+{ text-align:center;
+}
+div
+{
+border:40px solid darkred;
+background-color:yellow;
+}
+</style>
+</head>
+<body>
+<div>
+<h1 id="heading" onmouseover="headover()" onmouseout="headout()">Avengers vsJustice-League</h1>
+<center><img src="/home/stud/Downloads/comics.jpg"
+onmouseover="this.src='/home/stud/Downloads/justiceleage.jpg'"
+onmouseout="this.src='/home/stud/Downloads/avengers.jpg'"></img><center>
+<p id="cont" onmouseover="mouseOver()" onmouseout="mouseOut()">JLA/Avengers(issues #2 and 4 are titled Avengers/JLA) is a comic book limited series and crossover published in prestige format by DC Comics and Marvel Comics from September 2003 to March 2004.
+The series was written by Kurt Busiek, with art by George Pérez. The series features the two companies' teams of superheroes, DC Comics' Justice League of America and Marvel's Avengers.[5]</p>
+<script>
+function headover()
+{
+document.getElementById("heading").innerHTML="JUSTICE LEAGE";
+}
+function headout()
+{
+document.getElementById("heading").innerHTML="AVENGERS";
+}
+function mouseOver()
+{
+document.getElementById("cont").innerHTML="The Justice League (also known as The Justice League of America) are a team of superheroes appearing in American comic books published by DC Comics. 
+The team first appeared in The Brave and the Bold #28 (March 1960). The team was conceived by writer Gardner Fox as a revival of the Justice Society of America, a similar team from DC Comics from the 1940s which had been pulled out of print due to a decline in sales.";
+}
+function mouseOut()
+{
+document.getElementById("cont").innerHTML="Marvel's The Avengers[4] (classified under the name Marvel Avengers Assemble in the United Kingdom and Ireland),[1][5] or simply The Avengers, is a 2012 American superhero film based on the Marvel Comics superhero team of thesame name. 
+Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures,[N 1] it is the sixth film in the Marvel Cinematic Universe (MCU)";
+}
+</script>
+<div>
+</body>
+</html>
