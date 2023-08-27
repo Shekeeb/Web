@@ -1,0 +1,108 @@
+Bookinfo.html:-
+<html>
+<title>Book Information</title>
+<body>
+<h1 align="center"><b><u>BOOK INFORMATION SYSTEM</u></b></h1>
+<a href="Add.html">Add Book</a><br><br>
+<a href="Search.html">Search Book</a>
+</body>
+</html>
+
+
+Add.html:-
+<html>
+<title>Add Book</title>
+<body>
+<form name="form1" action="Add.php" method="POST">
+<center><b><u>Enter book details</u></b><br><br><br>
+Access Number:<input type="text" name="num"><br><br>
+Title:<input type="text" name="tit"><br><br>
+Author:<input type="text" name="aut"><br><br>
+Edition:<input type="text" name="edi"><br><br>
+Publisher:<input type="text" name="pub"><br><br>
+<input type="submit" name="Submit">
+<input type="reset" name="Reset">
+</body>
+</form> </center>
+</html>
+
+
+Add.php:-
+<?php
+$num=$_POST['num'];
+$tit=$_POST['tit'];
+$aut=$_POST['aut'];
+$edi=$_POST['edi'];
+$pub=$_POST['pub'];
+$con=new mysqli("localhost","fisat","fisat","fisatdb");
+if($con==false)
+{
+echo "Failed to connect";
+}
+else
+{
+echo "connected";
+}
+$sql="INSERT INTO 45shamil VALUES($num,'$tit','$aut','$edi','$pub')";
+if($con->query($sql))
+{
+echo "<BR>";
+echo 'New row added';
+}
+else
+{
+echo "ERROR:could not execute query";
+}
+$con->close();
+?>
+
+
+Search.html:-
+<html>
+<title>Search</title>
+<body>
+<form name="form2" action="Search.php" method="POST">
+<center><b><u>Search a book</u></b><br><br><br>
+Enter book title:<input type="text" name="txt"><br><br><br>
+<input type="submit" name="Submit">
+</center>
+</form>
+</body>
+</html>
+
+
+Search.php:-
+<?php
+$tit=$_POST['txt'];
+$con=new mysqli("localhost","fisat","fisat","fisatdb");
+if($con==false)
+{
+echo "Failed to connect......";
+}
+else
+{
+echo nl2br("connected ........\n");
+}
+$sql="select * from 45shamil where Title='$tit'";
+if($result1=$con->query($sql))
+{
+if($result1->num_rows>0)
+{
+while($row=$result1->fetch_array())
+{
+echo "<br>";
+echo "\n" .$row[0]." : ".$row[1]." : ".$row[2]." : ".$row[3]." : ".$row[4]."\n";
+}
+$result1->close();
+}
+else
+{
+echo "\nCould not found the book";
+}
+}
+else
+{
+echo "\nError:could not connect";
+}
+$con->close();
+?>
