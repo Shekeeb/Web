@@ -1,0 +1,110 @@
+<html>
+<head>
+<title>
+</title>
+<style>
+.myDiv {
+width: 500px;
+height: 700px;
+position: absolute;
+top: 5%;
+left: 15%;
+background-color: #90EE90;
+text-align: center;
+border-style: dotted;
+}
+.myDiv1 {
+width: 500px;
+height: 700px;
+position: absolute;
+top: 5%;
+left: 50%;
+background-color: #90EE90;
+text-align: center;
+border-style: dotted;
+}
+</style>
+</head>
+<body>
+<div class="myDiv">
+<br><br><h2><u>STRING&nbsp;&nbsp;FUNCTIONS</u></h2><br> Enter a string
+<br><br><input type="text" name="fname" id="text1"> <br><br>
+<button type="submit" style="height:50px; width:100px" value="Submit" onclick="StringForm()">Submit</button>
+<br><br>
+<u>Output</u><br>
+<p id="text2">
+</p> <p id="text3">
+</p> <p id="text4">
+</p> <p id="text5">
+</p> <p id="text6">
+</p><p id="text7">
+</p> <p id="text8">
+</p> <p id="text9">
+</p> <p id="text10">
+</p> <p id="text11">
+</p> <p id="text12">
+</p> </div>
+<div class="myDiv1">
+<br><br><h2><u>MATH&nbsp;&nbsp;FUNCTIONS</u>
+</h2><br> Enter any digit<br><br>
+<input type="number" id="qu" name="quantity">
+<br><br> <button type="submit" style="height:50px; width:100px" value="Submit" onclick="MathForm()">Submit</button> <br><br>
+<u>Output</u><br><br>
+<u>Constants</u><br>
+<p id="texta"> </p>
+<br><br> <p id="textb">
+</p> <p id="textc">
+</p> <p id="textd">
+</p> <p id="texte">
+</p> <p id="textf">
+</div> </body>
+<script>
+function StringForm() {
+let text = document.getElementById("text1").value;
+let length = text.length;
+let part = text.slice(3,5);
+let sub = text.substring(4,6);
+let subs = text.substr(-1);
+let re = text.replace("anex","pauly");
+let rep = text.replaceAll("m","M");
+let up = text.toUpperCase();
+let lo = text.toLowerCase();
+let tr = text.trim();
+let ch = text.charAt(2);
+document.getElementById("text2").innerHTML = "The String Length is : " + length;
+document.getElementById("text3").innerHTML = "The Sliced String from 3rd to 5th
+position is : " + part;
+document.getElementById("text4").innerHTML = "The Sub String from 4th to 6th position is
+: " + sub;
+document.getElementById("text5").innerHTML = "The Subpart of the String is : " + subs;
+document.getElementById("text6").innerHTML = "The replaced String is : " + re;
+document.getElementById("text7").innerHTML = "The replaceAll String is : " + rep;
+document.getElementById("text8").innerHTML = "The Uppercased String is : " + up;
+document.getElementById("text9").innerHTML = "The Lowercased String is : " + lo;
+document.getElementById("text11").innerHTML = "The Trimed String is : " + tr;
+document.getElementById("text12").innerHTML = "The Character at 2nd position of the
+String is : " + ch;
+return true;
+}
+function MathForm() {
+let text = document.getElementById("qu").value;
+let ro = Math.round(text);
+let ce = Math.ceil(text);
+let fl = Math.floor(text);
+let tu = Math.trunc(text);
+let si = Math.sign(text);
+document.getElementById("texta").innerHTML = "<p><b>Math.E:</b> " + Math.E +
+"</p>" + "<p><b>Math.PI:</b> " + Math.PI + "</p>" +
+"<p><b>Math.LN10:</b> " + Math.LN10 + "</p>" +
+"<p><b>Math.LOG2E:</b> " + Math.LOG2E + "</p>"
+document.getElementById("textb").innerHTML = "The Rounded value is " + ro;
+document.getElementById("textc").innerHTML = "The Rounded value using ceil function is
+" + ce;
+document.getElementById("textd").innerHTML = "The Rounded value using floor function
+is " + fl;
+document.getElementById("texte").innerHTML = "The Rounded value using truncate
+function is " + tu;
+document.getElementById("textf").innerHTML = "The sign of the value is " + si; return true;
+}
+</script>
+</html>
