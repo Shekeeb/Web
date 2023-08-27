@@ -1,0 +1,69 @@
+<html>
+<body style="background-image: url('fisat2.png'); background-size: 100%;">
+</body>
+<form method="POST" action="admission.php" name="form">
+<center><font color="red"><h2 color="red">FISAT MCA ADMISSION 2022</h2></font>
+<font color="Darkblue"><b>
+Name :<input type="text" name="name" size="20"><br><br>
+Email :<input type="email" name="email" size="20"><br><br>
+Date of Birth :<input type="date" name="dob" size="20"><br><br>
+Password :<input type="password" name="password" size="20"><br><br>
+Address :<input type="text" name="address" size="35"><br><br>
+Pin :<input type="number" name="mobile" size="10"><br><br>
+Mobile :<input type="number" name="mobile" size="20"><br><br>
+<br>
+<br>
+<br>
+How did you heard about FISAT ?<br><br>
+Friends <input type="checkbox" name="source" value="frinend"><br>
+Internet <input type="checkbox" name="source" value="internet"><br>
+Social Media <input type="checkbox" name="source" value="social"><br>
+Other <input type="checkbox" name="source" value="other"><br>
+<br>
+<br>
+<br>
+Mode of Admission ?<br><br>
+LBS Entrance General Quata <input type="radio" name="follow" value="followed"><br>
+LBS Entrance Community Quata <input type="radio" name="subscribe" value="subscribed"><br>
+managment Quata <input type="radio" name="share" value="shared"><br>
+<br>
+Please upload the following documents :<br>
+<br>
+SSLC <input type="file" name="sslc" value="sslc">
+Plustwo Certificate <input type="file" name="plustwo" value="plustwo">
+Degree Consolidate <input type="file" name="degree" value="degree">
+<br>
+<br>
+<br>
+Hostel Required ?<br>
+<select name="hostel">
+<option>yes
+<option>No
+</select>
+<br>
+<br>
+College Bus Service Requared ?<br>
+<select name="bus">
+<option>No
+<option>yes
+</select>
+<br>
+<br>
+Do you wish to receive further updates ?<br>
+<input type="button" name="yes" value="Yes">
+<input type="button" name="no" Value="No"><br>
+<br>
+<br>
+Please write your comments:<br>
+<textarea name="comments" rows="5" cols="20">
+Type Here
+</textarea>
+<br>
+<br>
+Please Click the submit button for completing the form :
+<br>
+<input type="submit" name="submit" value="submit">
+<input type="reset" name="reset" value="reset">
+<b></font></center>
+</form>
+</html>
