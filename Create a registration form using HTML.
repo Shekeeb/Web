@@ -1,0 +1,58 @@
+<html>
+<body style="background-image: url('bg31.jpeg');">
+<center>
+<form method="POST" name="Giveaway">
+<font color="darkred">
+<h2>Form for Participating a Giveaway</h2>
+Name <input type="text" name="name" id="sname" size="20"> <br>
+Email <input type="email" name="email" size="20"><br>
+Address <input type="text" name="address" size="30"><br>
+<br>
+<br>
+<br>
+How did you heard about this giveaway ?<br><br>
+Friends <input type="radio" name="source" value="frinend"><br>
+Internet <input type="radio" name="source" value="internet"><br>
+Social Media <input type="radio" name="source" value="social"><br>
+Other <input type="radio" name="source" value="other"><br>
+<br>
+<br>
+<br>
+Which tasks have you compleated ?<br><br>
+Followed on socail media <input type="checkbox" name="follow" value="followed"><br>
+Subscribed on youtube <input type="checkbox" name="subscribe"
+value="subscribed"><br>
+Shared this content to 10 groups or friends <input type="checkbox" name="share"
+value="shared"><br>
+<br>
+Please upload the proof of tasks :
+<input type="file" name="proof" value="proof">
+<br>
+<br>
+How do you rate us ?<br>
+<select name="rating">
+<option>Good
+<option>Okey
+<option>Bad
+</select>
+<br>
+<br>
+Do you wish to receive further updates ?<br>
+<input type="button" name="yes" value="Yes">
+<input type="button" name="no" Value="No"><br>
+<br>
+<br>
+Please write your comments:<br>
+<textarea name="comments" rows="5" cols="20">
+Type Here
+</textarea>
+<br>
+<br>
+Please Click the submit button for completing the form :
+<br>
+</font>
+<input type="submit" name="submit" value="submit">
+<input type="reset" name="reset" value="reset">
+</form></center>
+</body>
+</html>
