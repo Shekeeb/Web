@@ -1,0 +1,301 @@
+Main_Page.html:-
+<html>
+<head>
+<title>University Results - Home</title>
+<style>
+td {
+text-align: center;
+}
+</style>
+</head>
+<body>
+<h2 align="center"><u><b>MG University</b></u></h2>
+<h3 align="center"><u><b>Semester 6 Results</b></u></h3>
+<br>
+<br>
+<table align="center">
+<tr>
+<td>
+<button onclick="location.href='Students.php'">List of Students</button>
+</td>
+</tr>
+<tr>
+<td>
+<button onclick="location.href='Subjects.php'">List of
+Subjects</button>
+</td>
+</tr>
+<tr>
+<td>
+<button onclick="location.href='sub.html'">Subject-wise Result</button>
+</td>
+</tr>
+<tr>
+<td>
+<button onclick="location.href='grade.html'">Semester Grade Report</button>
+</td>
+</tr>
+</table>
+</body>
+</html>
+
+
+Students.php:-
+<?php
+$con = new mysqli('localhost', 'root', '', ‘fisatdb'); if($con == false) {
+echo "Connection Failed";
+}
+else {
+echo "<h3 align='center'><u><b>Student List</b></u></h3>";
+$sql = "SELECT * FROM students;";
+if($result1 = $con -> query($sql)) {
+if($result1 -> num_rows > 0) {
+echo "
+<table align='center' border='1'>
+<tr>
+<th>Register No.</th>
+<th>Name</th>
+</tr>
+";
+while($row = $result1 -> fetch_array()) {
+echo "
+<tr>
+<td>&nbsp;$row[0]&nbsp;</td>
+<td>&nbsp;$row[1]&nbsp;</td>
+</tr>
+";
+}
+echo "</table>";
+}
+else {
+echo "No rows were found in the record!!!";
+}
+}
+else {
+echo "Query Execution Failed!!!";
+}
+}
+echo "<a href='Main_Page.html'><button>Main Page</button></a>"; ?>
+
+
+Subjects.php:-
+<?php
+$con = new mysqli('localhost', 'root', '', 'fisatdb'); if($con == false) {
+echo "Connection Failed";
+}
+else {
+echo "<h3 align='center'><u><b>Subject List</b></u></h3>";
+$sql = "SELECT * FROM subjects;";
+if($result1 = $con -> query($sql)) {
+if($result1 -> num_rows > 0) {
+echo "
+<table align='center' border='1'>
+<tr>
+<th>Course Code</th>
+<th>Course Name</th>
+</tr>
+";
+while($row = $result1 -> fetch_array())
+{
+echo "
+<tr>
+<td>&nbsp;$row[0]&nbsp;</td>
+<td>&nbsp;$row[1]&nbsp;</td>
+</tr>
+";
+}
+echo "</table>";
+}
+else {
+echo "No rows were found in the record!!!";
+}
+}
+else {
+echo "Query Execution Failed!!!";
+}
+}
+echo "<a href='Main_Page.html'><button>Main Page</button></a>"; ?>
+
+
+sub.html:-
+<html>
+<head>
+<title>Subject-Wise Results</title>
+<style>
+td {
+text-align: left;
+}
+</style>
+</head>
+<body>
+<h2 align="center"><u><b>Subject-Wise Results</b></u></h2> <br><br>
+<form name="form1" action="sub.php" method="post">
+<table align="center">
+<tr>
+<td>Enter the course code</td>
+<td>
+<input type="text" name="coursecode" size="30" required>
+</td>
+</tr>
+</table>
+<br>
+<div align="center">
+<input type="submit" value="Submit">&nbsp;
+<input type="reset" value="Clear">
+<br><br>
+<button onclick="location.href='Main_Page.html'">Main Page</button>
+</div>
+</body>
+</html>
+
+
+sub.php:-
+<?php
+$sub1 = $_POST['coursecode'];
+$con = new mysqli('localhost', 'root', '', 'fisatdb'); if($con == false) {
+echo "Connection Failed";
+}
+else {
+echo "<h3 align='center'><u><b>Subject-Wise Results</b></u></h3>";
+$sql3 = "SELECT * from subjects where Course_Code = '$sub1';";
+$sql = "SELECT * FROM $sub1;";
+if($result1 = $con -> query($sql)) {
+if($result1 -> num_rows > 0) {
+$result3 = $con -> query($sql3);
+$row3 = $result3 -> fetch_array();
+echo "
+<div align='center'>
+<h4><b>$row3[0]: $row3[1]</b></h4>
+</div>
+";
+echo "
+<table align='center' border='1'>
+<tr>
+<th>Reg. No.</th>
+<th>Student Name</th>
+<th>Grade</th>
+</tr>
+";
+while($row = $result1 -> fetch_array()) {
+$sql2 = "SELECT Name from students where Register_no =
+'$row[0]';";
+$result2 = $con -> query($sql2);
+$row2 = $result2 -> fetch_array();
+echo "
+<tr>
+<td>&nbsp;$row[0]&nbsp;</td>
+<td>&nbsp;$row2[0]&nbsp;</td>
+<td>&nbsp;$row[1]&nbsp;</td>
+</tr>
+";
+}
+echo "</table>";
+}
+else {
+echo "No rows were found in the record!!!";
+}
+}
+else {
+echo "Query Execution Failed!!!";
+}
+}
+echo "<a href='Main_Page.html'><button>Main Page</button></a>";
+?>
+
+grade.html:-
+<html>
+<head>
+<title>Semester Grade Report</title>
+<style>
+td {
+text-align: left;
+}
+</style>
+</head>
+<body>
+<h2 align="center"><u><b>Semester Grade Report</b></u></h2>
+<br><br>
+<form name="form1" action="grade.php" method="post">
+<table align="center">
+<tr>
+<td>Enter the Register No.</td>
+<td>
+<input type="text" name="registerno" size="30" required>
+</td>
+</tr>
+</table>
+<br>
+<div align="center">
+<input type="submit" value="Submit">&nbsp;
+<input type="reset" value="Clear">
+<br><br>
+<button onclick="location.href='Main_Page.html'">Main Page</button> </div>
+</body>
+</html>
+
+
+grade.php:-
+<?php
+$reg = $_POST['registerno'];
+$con = new mysqli('localhost', 'root', 'fisatdb’); if($con == false) {
+echo "Connection Failed";
+}
+else {
+echo "<h2 align='center'><u><b>Semester Grade Report</b></u></h3>"; $sql = "SELECT *
+FROM students where Register_no = '$reg';";
+if($result1 = $con -> query($sql)) {
+if($result1 -> num_rows > 0) {
+$row = $result1 -> fetch_array();
+echo "
+<table align='center'>
+<tr>
+<th>Register Number</th>
+<td>:</td>
+<td align='left'>&nbsp;$row[0]</td>
+</tr>
+<tr>
+<th>Full Name</th>
+<td>:</td>
+<td align='left'>&nbsp;$row[1]</td>
+</tr>
+<tr>
+<th>Semester</th>
+<td>:</td>
+<td align='left'>&nbsp;6</td>
+</table><br>
+";
+$sql2 = "SELECT * FROM subjects;";
+$result2 = $con -> query($sql2);
+echo "
+<table align='center' border='2'>
+<tr>
+<th>Course Code</th>
+<th>Course Name</th>
+<th>Grade</th>
+</tr>
+";
+while($row2 = $result2 -> fetch_array()) {
+$sql3 = "SELECT Grade FROM $row2[0] WHERE
+Register_no = '$reg';";
+$result3 = $con -> query($sql3);
+$row3 = $result3 -> fetch_array();
+echo "
+<tr>
+<td align='right'>&nbsp;$row2[0]&nbsp;</td>
+<td align='left'>&nbsp;$row2[1]&nbsp;</td>
+<td align='center'>&nbsp;$row3[0]&nbsp;</td>
+</tr>
+";
+}
+echo "</table>";
+}
+else {
+echo "The inputted register number is not valid!!!";
+}
+}
+else {
+echo "Query Execution Failed";
+}
+}
+echo "<a href='Main_Page.html'><button>Main Page</button></a>";
+?>
