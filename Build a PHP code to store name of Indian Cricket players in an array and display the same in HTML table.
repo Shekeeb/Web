@@ -1,0 +1,58 @@
+<?php
+$cricketers= array("Sachin Tendulkar", "Rahul Dravid", "VVS Laxman","Anil Kumble","Kapil Dev","Sunil Gavaskar","Dilip Vengsarkar","Sourav Ganguly");
+?>
+<html>
+<head>
+</head>
+<body>
+<center>
+<table border="1" height="300" width="400">
+<caption><h1> Indian Players with 100 Test Matches</h1></caption> <tr>
+<th>Name</th>
+<th>Matches</th>
+<th>Runs</th>
+</tr>
+<tr>
+<td> <?php echo $cricketers[0]; ?> </td>
+<td> 200 </td>
+<td> 15921 </td>
+</tr>
+<tr>
+<td> <?php echo $cricketers[1]; ?> </td>
+<td> 163 </td>
+<td>13265</td>
+</tr>
+<tr>
+<td> <?php echo $cricketers[2]; ?> </td>
+<td> 134 </td>
+<td>8781</td>
+</tr>
+<tr>
+<td> <?php echo $cricketers[3]; ?> </td>
+<td>132 </td>
+<td> 2506</td>
+</tr>
+<tr>
+<td> <?php echo $cricketers[4]; ?> </td>
+<td> 131</td>
+<td>5248</td>
+</tr>
+<tr>
+<td> <?php echo $cricketers[5]; ?> </td>
+<td>125 </td>
+<td> 10122</td>
+</tr>
+<tr>
+<td> <?php echo $cricketers[6]; ?> </td>
+<td>116 </td>
+<td>6868</td>
+</tr>
+<tr>
+<td> <?php echo $cricketers[7]; ?> </td> <td> 113 </td>
+<td> 7212</td>
+</tr>
+</table>
+<br><br>
+</center >
+</body>
+</html>
