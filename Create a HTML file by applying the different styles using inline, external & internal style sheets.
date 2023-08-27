@@ -1,0 +1,109 @@
+INLINE:-
+<html>
+<head>
+<title>Marvel Wiki</title>
+</head>
+<body bgcolor="black">
+<center>
+<h1 style="color:red;font-family:serif;font-size:40px;">JARVIS MARK40</h1>
+<p style="color:yellow;font-family:verdana;font-size:28px;">Hi all, Iam Jarvis</p>
+<p style="color:lightgreen;font-family:georgia;font-size:25px;">Im introducing the new
+mark 40
+from stark indrustries</p>
+<p style="color:white;font-family:corona;font-size:20px;">
+speaking of Mark 40, the suit was named "Shotgun" and is a hyper velocity travel suit</p>
+<p style="color:white;font-family:corona;font-size:20px;">
+The Mark 21 nicknamed "Midas" (Due to golden colour) was also a hyper velocity travel
+suit, but
+the flaw is that the suit will split at a 30% chance after taking off at high speeds. After
+noticing the
+flaw tony built the mark 40.</p>
+<p style="color:white;font-family:corona;font-size:20px;">
+So back to the main title, I'm new here and I would like some advice on how to edit things
+and
+etc.</p>
+<p style="color:white;font-family:corona;font-size:20px;">
+If need me just call me on my message wall.</p>
+<p style="color:white;font-family:corona;font-size:20px;">
+There's just one thing you can't take away.</p>
+<p style="color:white;font-family:corona;font-size:20px;">
+I am Jarvis Ios Mark 40. I hope to meet you again, Dear Reader.</p>
+<h3 style="color:lightblue;font-family:serif;font-size:30px;">Thank You</h3>
+</center>
+</body>
+</html>
+
+
+INTERNAL:-
+<html>
+<head>
+<style>
+.container {
+position: relative;
+}
+.center {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 18px;
+} img {
+width: 100%;
+height: auto;
+opacity: 0.6;
+}
+h2{
+color:red
+}
+</style>
+</head>
+<body>
+<div class="container">
+<img src="fisat.jpg" width="200" height="50">
+<div class="center">
+<h2><center><u>FEDERAL INSTITUTE OF SCIENCE AND TECHNOLOGY ( FISAT)</u></center></h2>
+Federal Institute of Science And Technology (FISAT) is a private, self-financing engineering college, established and run by the Federal Bank Officers' Association Educational Society(FBOAES). It is one of the top private engineering colleges in Kerala. It is an initiative of the Federal Bank Officers' Association (FBOA), the sole representative body of the entire officers of the Federal Bank. 
+FISAT is accredited by NBA and NAAC.
+FISAT is set up at Mookannoor, near Angamaly in Ernakulam District, Kerala, the birthplace of the founder of The Federal Bank Ltd, Late K.P Hormis.
+FISAT is affiliated to APJ Abdul Kalam Technological University (KTU), Mahatma Gandhi University,Kerala and approved by All India Council for Technical Education (AICTE), New Delhi.
+</div>
+</body>
+</html>
+
+
+EXTERNAL:-
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="ex.css" />
+</head>
+<body>
+<h2><center><u>FEDERAL INSTITUTE OF SCIENCE AND TECHNOLOGY</u></center></h2>
+<div class="container">
+<img src="fisat1.jpg" width="1000" height="300">
+<div class="center"Federal Institute of Science And Technology (FISAT) is a private, self-financing engineering college, established and run by the Federal Bank Officers' Association Educational Society(FBOAES). It is one of the top private engineering colleges in Kerala. It is an initiative of the Federal Bank Officers' Association (FBOA), the sole representative body of the entire officers of the Federal Bank. 
+FISAT is accredited by NBA and NAAC.
+FISAT is set up at Mookannoor, near Angamaly in Ernakulam District, Kerala, the birthplace of the founder of The Federal Bank Ltd, Late K.P Hormis.
+FISAT is affiliated to APJ Abdul Kalam Technological University (KTU), Mahatma Gandhi University,Kerala and approved by All India Council for Technical Education (AICTE), New Delhi.
+</div>
+</body>
+</html>
+
+
+CSS:-
+.container {
+position: relative;
+}
+.center {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 18px;
+} img {
+width: 100%;
+height: auto;
+opacity: 0.55;
+}
+h2{
+color:red
+}
