@@ -1,0 +1,89 @@
+billgeneration.html:-
+<html>
+<style>
+td ,tr {
+border: 1px solid blue;
+background-color: #96D4D4;
+border-style: dashed;
+}</style>
+<center>
+<br><br><br><br>
+<div style="color:#3E3E38";><h1><u>ELECTRICITY BILL GENERATOR</u></h1></div><br>
+<form action="bill.php" method="post">
+<table border=1>
+<tr><td>Consumer Name</td>
+<td><input type="text" name="name"></td></tr>
+<tr><td>Consumer Number </td>
+<td><input type="number" name="cno"></td></tr>
+<tr><td>Bill Number </td>
+<td><input type="number" name="bno"></td></tr>
+<tr><td>Units Used </td>
+<td><input type="number" name="unit"></td></tr>
+<tr><td>Meter Reader </td>
+<td><input type="text" name="mtr"></td></tr>
+</table>
+<br>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</form>
+</center>
+</html>
+
+
+bill.php:-
+<html>
+<style>
+td ,tr {
+border: 1px solid blue;
+background-color: #F6EF00;
+border-style: dashed;
+}</style>
+<center>
+<?php
+$name=$_POST["name"];
+$cno=$_POST["cno"];
+$bno=$_POST["bno"];
+$units=$_POST["unit"];
+$mtr=$_POST["mtr"];
+$unitcost_first = 3.50;
+$unitcost_second = 4.00;
+$unitcost_third = 5.20;
+$unitcost_fourth = 6.50;
+if($units<=50)
+{
+$bill=$units*$unitcost_first;
+}e
+lse if($units>50 && $units<=100)
+{
+$temp=50*$unitcost_first;
+$rem_units=$units-50;
+$bill=$temp+($rem_units *$unitcost_second);
+}e
+lse if($units>100 && $units<=200)
+{
+$temp=(50*3.5)+(100*$unitcost_second);
+$rem_units=$units-150;
+$bill=$temp+($rem_units*$unitcost_third);
+}e
+lse
+{
+$temp=(50 * 3.5)+(100*$unitcost_second)+(100*$unitcost_third);
+$remaining_units=$units-250;
+$bill=$temp+($rem_units*$unitcost_fourth);
+}?
+>
+<br><br>
+<h1><b><u><div style="color:blue";>ELECTRICITY BILL</div></u></b></h1><br>
+<table border=2>
+<tr><td style="font-weight:bold">Consumer Name </td> <td style="font-weight:bold"><?php echo $name;?>
+<tr><td>Consumer number</td> <td><?php echo $cno;?>
+<tr><td>Bill number</td> <td><?php echo $bno;?>
+<tr><td>Bill Generated Date & Time </td> <td><?php echo date("d F Y , h:i:s A");?>
+<tr><td style="font-weight:bold">Bill Due Date</td> <td style="font-weight:bold"><?php
+echo date("d F Y
+",strtotime('+10 days'));?>
+<tr><td style="font-weight:bold">Bill amount </td> <td style="font-weight:bold"><?php
+echo $bill;?>
+<tr><td>Meter reader</td> <td><?php echo $mtr;?>
+</center>
+</html>
