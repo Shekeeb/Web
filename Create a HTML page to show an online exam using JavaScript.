@@ -1,0 +1,73 @@
+<html>
+<head>
+<style>
+body
+{
+background-color: bisque;
+}
+</style>
+</head>
+<body>
+<h1 align="center">TECHNOLOGY ONLINE QUIZ</h1>
+<br><br>
+<b> Q.1 'OS' computer abbreviation usually means ?</b><br>
+<input type="radio" id="q1a" name="q1" value="Don Bradman">Order of Significance<br>
+<input type="radio" id="q1b" name="q1" value="Brian Lara">Open Software<br>
+<input type="radio" id="q1c" name="q1" value="Lane Hutton">Operating System<br>
+<input type="radio" id="q1d" name="q1" value="Gary Sobers">Optical Sensor<br><br>
+<br>
+<b> Q.2 In which decade with the first transatlantic radio broadcast occur?</b><br>
+<input type="radio" id="q2a" name="q2" value="Virender Sehwag">1850s<br>
+<input type="radio" id="q2b" name="q2" value="Chris Gayle">1860s<br>
+<input type="radio" id="q2c" name="q2" value="Martin Guptill">1870s<br>
+<input type="radio" id="q2d" name="q2" value="Rohit Sharma">1900s<br><br>
+<br>
+<b> Q.3 '.MOV' extension refers usually to what kind of file?</b><br>
+<input type="radio" id="q3a" name="q3" value="Ricky Ponting">Image file<br>
+<input type="radio" id="q3b" name="q3" value="Mahela Jayawardene">Animation/Video
+file<br>
+<input type="radio" id="q3c" name="q3" value="Jacques Kallis">Audio file<br>
+<input type="radio" id="q3d" name="q3" value="Mark Waugh">MS office Document
+file<br><br>
+<br>
+<b> Q.4 Which is a type of Electrically-Erasable Programmable Read-Only Memory?</b><br>
+<input type="radio" id="q4a" name="q4" value="Lane Hutton">Flash<br>
+<input type="radio" id="q4b" name="q4" value="Wally Hammond">Fange<br>
+<input type="radio" id="q4c" name="q4" value="Jack Hobbs">Furry<br>
+<input type="radio" id="q4d" name="q4" value="Sachin Tendulkar">FARAM<br><br>
+<br>
+<b> Q.5 'DB' computer abbreviation usually means ?</b><br>
+<input type="radio" id="q5a" name="q5" value="MS Dhoni">Database<br>
+<input type="radio" id="q5b" name="q5" value="Yuvraj Singh">Data Block<br>
+<input type="radio" id="q5c" name="q5" value="Virat Kohli">Double Byte<br>
+<input type="radio" id="q5d" name="q5" value="Sachin Tendulkar">Driver Boot<br><br>
+<button type="button" onclick=" checkButton()"> Submit </button>
+</body>
+<script>
+function checkButton()
+{
+var mark=0
+if(document.getElementById('q1c').checked)
+{
+mark=mark+1;
+}
+if(document.getElementById('q2d').checked)
+{
+mark=mark+1;
+}
+if(document.getElementById('q3b').checked)
+{
+mark=mark+1;
+}
+if(document.getElementById('q4a').checked)
+{
+mark=mark+1;
+}
+if(document.getElementById('q5d').checked)
+{
+mark=mark+1;
+}
+alert("you have gained "+mark+" out of 5");
+}
+</script>
+</html>
