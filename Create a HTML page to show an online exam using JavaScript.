@@ -24,11 +24,9 @@ background-color: bisque;
 <br>
 <b> Q.3 '.MOV' extension refers usually to what kind of file?</b><br>
 <input type="radio" id="q3a" name="q3" value="Ricky Ponting">Image file<br>
-<input type="radio" id="q3b" name="q3" value="Mahela Jayawardene">Animation/Video
-file<br>
+<input type="radio" id="q3b" name="q3" value="Mahela Jayawardene">Animation/Videofile<br>
 <input type="radio" id="q3c" name="q3" value="Jacques Kallis">Audio file<br>
-<input type="radio" id="q3d" name="q3" value="Mark Waugh">MS office Document
-file<br><br>
+<input type="radio" id="q3d" name="q3" value="Mark Waugh">MS office Documentfile<br><br>
 <br>
 <b> Q.4 Which is a type of Electrically-Erasable Programmable Read-Only Memory?</b><br>
 <input type="radio" id="q4a" name="q4" value="Lane Hutton">Flash<br>
